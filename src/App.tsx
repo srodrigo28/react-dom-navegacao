@@ -11,8 +11,11 @@ function App() {
   
  
   return (
-   <div className=''>
-     <div>
+   <div className='p4'>
+     <header>
+        <h1>Titulo do site</h1>
+     </header>
+     <div className='py-4'>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/sobre" element={<Aboult/>} />
