@@ -2,8 +2,9 @@
 * npm install styled-components
 * npm install -D @types/styled-components
 * formas para importar components styed-components
+* navigation muito bom https://alunos.b7web.com.br/curso/reactjs/redirecionamento-de-rotas
 
-## Instalando e configurando
+## Instalando e configurando react-router-dom
     * npm install react-router-dom
     * configurando o inicio
         * no arquivo index do seu projeto configurar

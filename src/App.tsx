@@ -2,15 +2,12 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import './index.css';
 import { Aboult } from './pages/Aboult';
-import { AboutPedro } from './pages/AboultPedro';
-import { AboutBonieky } from './pages/AboutBonieky';
+import { AboultItem } from './pages/AboultItem';
 import { Home } from './pages/Home';
 import { NotFound } from './pages/NotFound';
 
 function App() {
 
-  
- 
   return (
    <div className='p-5 bg-indigo-600 text-white container'>
      <header>
@@ -21,8 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/sobre" element={<Aboult/>} />
-          <Route path="/sobre/bonieky" element={<AboutBonieky/>} />
-          <Route path="/sobre/pedro" element={<AboutPedro/>} />
+          <Route path="/sobre/:slug" element={<AboultItem/>} />
           <Route path="*" element={<NotFound/>} />
         </Routes>
      </div>
