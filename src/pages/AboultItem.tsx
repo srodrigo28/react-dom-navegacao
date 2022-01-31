@@ -20,6 +20,7 @@ export const AboultItem = () =>{
 
     return(
         <div>
+            
             <h1 className='p-4'>Página sobre Item - {params.slug}</h1>
             <br /><hr />
             <button className='bg-white text-black' onClick={voltar}>Voltar</button> | .

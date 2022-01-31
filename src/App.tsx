@@ -1,10 +1,6 @@
-import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import './index.css';
-import { Aboult } from './pages/Aboult';
-import { AboultItem } from './pages/AboultItem';
-import { Home } from './pages/Home';
-import { NotFound } from './pages/NotFound';
+import { RouteList } from './RouteList';
 
 function App() {
 
@@ -15,12 +11,7 @@ function App() {
         <hr />
      </header>
      <div className='py-4'>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/sobre" element={<Aboult/>} />
-          <Route path="/sobre/:slug" element={<AboultItem/>} />
-          <Route path="*" element={<NotFound/>} />
-        </Routes>
+       <RouteList />
      </div>
 
      <hr />
